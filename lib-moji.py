@@ -1,3 +1,4 @@
+# Distraction I made to keep myself from doing other stuff...
 from time import sleep
 from random import sample
 from cursor import HiddenCursor as hide_cursor
@@ -11,8 +12,7 @@ emojis = [u'\u2198', u'\U0001f446', u'\U0001f251', u'\U0001f62d', u'\u25fb', u'\
 # Prints the emoji along with the corresponding hex value
 def get_emoji_vals():
     for emoji in emojis:
-        print(emoji)
-        print(map(lambda uni: hex(ord(uni)),emoji))
+        print((emoji,map(lambda uni: hex(ord(uni)),emoji)))
 
 # Helps you distract how painstakingly slow your code is, with a little help from emojis
 def eloadji(frames=[],text_color="green",text_attrs=["reverse"],width=10,delay=0.1,time=60):
