@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
@@ -9,13 +10,13 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='lib-moji',
+    name='libmoji',
     version='0.0.1',
     description='Not really much of a library just a few emoji utilities',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/michaelscript/lib-moji',
+    url='https://github.com/michaelscript/libmoji',
 
     # Author details
     author='Michael Green',
@@ -34,7 +35,7 @@ setup(
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Development Tools',
+        'Topic :: Software Development :: Libraries :: Python Modules',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: MIT License',

@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+libmoji/__init__.py
+libmoji/libmoji.py
+libmoji.egg-info/PKG-INFO
+libmoji.egg-info/SOURCES.txt
+libmoji.egg-info/dependency_links.txt
+libmoji.egg-info/requires.txt
+libmoji.egg-info/top_level.txt

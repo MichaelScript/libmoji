@@ -18,7 +18,7 @@ def get_emoji_vals():
 
 # Helps you distract how painstakingly slow your code is, with a little help from emoji
 # Takes in frames for text and can cycle through those as well along with the emoji
-def load_moji(func,args=[],kwargs={},frames=[],fixed_width=True,text_color="green",text_attrs=["reverse","bold"],width=10,delay=0.1):
+def load_moji(func,args=[],kwargs={},frames=[],fixed_width=True,text_color="green",text_attrs=["reverse","bold"],width=10,delay=0.1,time=60):
     # We start running our function thread before we even start the animation.
     t = threading.Thread(target=func, args=args, kwargs=kwargs)
     t.start()
@@ -29,7 +29,7 @@ def load_moji(func,args=[],kwargs={},frames=[],fixed_width=True,text_color="gree
         frames = map(lambda frame: frame + ' ' * (max_frame_length - len(frame)),frames)
     # Characters that are longer than 2 bytes get kind of glitchy so we filter them out
     valid_emoji = filter(lambda emoji: len(emoji) < 3,emojis)
-    # Adding text effects and creating cycler
+    # Adding text effects and cycler
     frames = cycle(map(lambda text: colored(' ' + text + ' ',color=text_color,attrs=text_attrs),frames))
     with hide_cursor():
         # Keep animation up until the thread terminates
@@ -39,11 +39,3 @@ def load_moji(func,args=[],kwargs={},frames=[],fixed_width=True,text_color="gree
             sleep(delay)
             # Faster, less glitchy method of clearing than carriage returns, bspace chars, etc.
             subprocess.call(["tput","clear"])
-
-def random(count=1,byte_limit=None):
-    if byte_limit:
-        emojis = filter(lambda emoji: len(emoji) < byte_limit,emojis)
-    chosen = sample(emojis,count)
-    if len(chosen) == 1:
-        chosen = chosen[0]
-    return chosen

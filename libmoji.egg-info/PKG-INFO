@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: libmoji
+Version: 0.0.1
+Summary: Not really much of a library just a few emoji utilities
+Home-page: https://github.com/michaelscript/libmoji
+Author: Michael Green
+Author-email: me@michaelgreen.net
+License: MIT
+Description: #libmoji
+        * Makes you hate variable character length
+        * Provides a list of emojis and their unicode values.
+        * Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
+        
+        ###Example Usage
+        ```python
+        import libmoji
+        from time import sleep
+        # Displays randomly chosen emojis along with a loading "animation" for ten seconds.
+        libmoji.load_moji(sleep,args=[10],frames=["LOADING.","LOADING..","LOADING..."])
+        ```
+Keywords: emoji,utilities,emoji loading,loading animation,emoji library,emoji framework,eloadji,load_moji,dumb library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
