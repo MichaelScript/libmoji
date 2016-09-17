@@ -10,8 +10,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='lib-moji',
-    version='0.1.0',
-    description='A few emoji utilities',
+    version='0.0.1',
+    description='Not really much of a library just a few emoji utilities',
     long_description=long_description,
 
     # The project's main homepage.
@@ -51,7 +51,7 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='emoji, utilities, emoji library, emoji framework, eloadji, load-moji, dumb',
+    keywords='emoji, utilities, emoji loading, loading animation, emoji library, emoji framework, eloadji, load_moji, dumb library',
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
 

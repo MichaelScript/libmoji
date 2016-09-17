@@ -1,3 +1,3 @@
 import libmoji
-
-libmoji.load_moji(["LOADING.","LOADING..","LOADING..."])
+from time import sleep
+libmoji.load_moji(sleep,args=[10],frames=["LOADING.","LOADING..","LOADING..."])
