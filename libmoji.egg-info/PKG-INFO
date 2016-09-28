@@ -1,23 +1,69 @@
 Metadata-Version: 1.1
 Name: libmoji
-Version: 0.0.1
+Version: 0.0.2
 Summary: Not really much of a library just a few emoji utilities
 Home-page: https://github.com/michaelscript/libmoji
 Author: Michael Green
 Author-email: me@michaelgreen.net
 License: MIT
 Description: #libmoji
-        * Makes you hate variable character length
+        * Makes you hate variable character pixel width
         * Provides a list of emojis and their unicode values.
-        * Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
+        * Randomly select emojis
+        * Create cool loading animations
         
-        ###Example Usage
+        ### Installation
+        ```bash
+        pip install libmoji
+        ```
+        
+        ###Features
+        <blockquote>
+        ####load_moji
+        Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
         ```python
         import libmoji
         from time import sleep
         # Displays randomly chosen emojis along with a loading "animation" for ten seconds.
         libmoji.load_moji(sleep,args=[10],frames=["LOADING.","LOADING..","LOADING..."])
         ```
+        ######Positional Arguments:
+        * **func**
+        	- The function to run while the animation is playing.
+        
+        ######Keyword Arguments:
+        * **args**
+        *(Default Value: [ ])*
+        	- Any arguments that the function takes
+        
+        * **kwargs**
+        *(Default Value: { })*
+        	- Any keyword arguments that the function takes
+        
+        * **frames**
+        *(Default Value: [ ])*
+        	- Text animation frames to be looped through
+        
+        * **fixed_width**
+        *(Default Value: True)*
+        	- Pad animation frames to the same width
+        
+        * **text_color**
+        *(Default Value: "green")*
+        	- Color of frame text (See termcolor for text options)
+        
+        * **text_attrs**
+        *(Default Value: ["reverse","bold"])*
+        	- Frame text attributes (See termcolor for text options)
+        * **width**
+        *(Default Value: 10)*
+        	- How many emojis to display
+        
+        * **delay**
+        *(Default Value: 0.1)*
+        	- Delay between frames in seconds.
+        </blockquote>
+        
 Keywords: emoji,utilities,emoji loading,loading animation,emoji library,emoji framework,eloadji,load_moji,dumb library
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
