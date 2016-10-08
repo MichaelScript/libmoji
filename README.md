@@ -20,6 +20,7 @@ libmoji.load_moji(sleep,args=[10],frames=["LOADING.","LOADING..","LOADING..."])
 #####Positional Arguments:
 * **func**
 	- The function to run while the animation is playing.
+
 #####Keyword Arguments:
 * **args**
 *(Default Value: [ ])*
