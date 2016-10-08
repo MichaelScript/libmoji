@@ -8,9 +8,7 @@
 ```bash
 pip install libmoji
 ```
-
 ###Features
-<blockquote>
 ####load_moji
 Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
 ```python
@@ -19,39 +17,33 @@ from time import sleep
 # Displays randomly chosen emojis along with a loading "animation" for ten seconds.
 libmoji.load_moji(sleep,args=[10],frames=["LOADING.","LOADING..","LOADING..."])
 ```
-######Positional Arguments:
+#####Positional Arguments:
 * **func**
 	- The function to run while the animation is playing.
-
-######Keyword Arguments:
+#####Keyword Arguments:
 * **args**
 *(Default Value: [ ])*
 	- Any arguments that the function takes
-
 * **kwargs**
 *(Default Value: { })*
 	- Any keyword arguments that the function takes
-
 * **frames**
 *(Default Value: [ ])*
 	- Text animation frames to be looped through
-
 * **fixed_width**
 *(Default Value: True)*
 	- Pad animation frames to the same width
-
 * **text_color**
 *(Default Value: "green")*
 	- Color of frame text (See termcolor for text options)
-
 * **text_attrs**
 *(Default Value: ["reverse","bold"])*
 	- Frame text attributes (See termcolor for text options)
 * **width**
 *(Default Value: 10)*
 	- How many emojis to display
-
 * **delay**
 *(Default Value: 0.1)*
 	- Delay between frames in seconds.
-</blockquote>
+
+
