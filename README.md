@@ -1,4 +1,5 @@
 #libmoji
+Currently a work in progress, some functionality is currently undocumented. Feel free to help out.
 * Makes you hate variable character pixel width
 * Provides a list of emojis and their unicode values.
 * Randomly select emojis
