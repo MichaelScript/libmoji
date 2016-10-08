@@ -8,7 +8,7 @@
 ```bash
 pip install libmoji
 ```
-###Features
+###Documentation
 ####load_moji
 Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
 ```python
