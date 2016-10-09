@@ -10,7 +10,14 @@ Currently a work in progress, some functionality is currently undocumented. Feel
 pip install libmoji
 ```
 ###Documentation
-####load_moji
+###random()
+Returns a random emoji
+```python
+import libmoji
+print(libmoji.random())
+```
+
+####load_moji()
 Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
 ```python
 import libmoji
