@@ -9,15 +9,24 @@ Currently a work in progress, some functionality is currently undocumented. Feel
 ```bash
 pip install libmoji
 ```
-###Documentation
+##Documentation
 ###random()
 Returns a random emoji
 ```python
 import libmoji
 print(libmoji.random())
 ```
-
-####load_moji()
+#####Positional Arguments: **None**
+#####Keyword Arguments: **None**
+###get_emoji_vals()
+Returns a random emoji
+```python
+import libmoji
+print(libmoji.get_emoji_vals())
+```
+#####Positional Arguments: **None**
+#####Keyword Arguments: **None**
+###load_moji()
 Helps you distract how painstakingly slow your code is, with cool loading animations featuring emojis
 ```python
 import libmoji
