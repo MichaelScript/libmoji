@@ -11,8 +11,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='libmoji',
-    version='0.0.3',
-    description='Not really much of a library just a few emoji utilities',
+    version='0.0.5',
+    description='Just a few emoji utilities',
     long_description=long_description,
 
     # The project's main homepage.
