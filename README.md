@@ -1,9 +1,8 @@
 #libmoji
-Currently a work in progress, some functionality is currently undocumented. Feel free to help out.
-* Makes you hate variable character pixel width
+Dumb little emoji library
 * Provides a list of emojis and their unicode values.
 * Randomly select emojis
-* Create cool loading animations
+* Create cool loading animations with emojis
 
 ### Installation
 ```bash
